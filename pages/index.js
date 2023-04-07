@@ -4,6 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+import Image from "next/image";
 
 // export async function getServerSideProps(context) {
 //   return {
@@ -23,6 +24,12 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+  // async function fetchData(){
+  //   const res = await fetch('https://drive.google.com/uc?export=view&id=1AxLkZFi7NXGq882qQHnNsEh8ggU-W_wh')
+  //   const data = await res.json()
+  //   return data
+  // }
+
   return (
     <Layout home>
       <Head>
@@ -34,6 +41,14 @@ export default function Home({ allPostsData }) {
           (This is a sample website - you'll be building a site like this on{" "}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
+        <Image
+          src={
+            "https://drive.google.com/uc?export=view&id=1AxLkZFi7NXGq882qQHnNsEh8ggU-W_wh"
+          }
+          width={600}
+          height={400}
+          quality={100}
+        />
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
