@@ -54,7 +54,7 @@ export default function Home({ allPostsData }) {
           height={400}
           quality={10}
           alt="image"
-          loader={loaderProp}
+          // loader={loaderProp}
         />
       </section>
 
