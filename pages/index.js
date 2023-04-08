@@ -29,6 +29,9 @@ export default function Home({ allPostsData }) {
   //   const data = await res.json()
   //   return data
   // }
+  const loaderProp = ({ src }) => {
+    return src;
+  };
 
   return (
     <Layout home>
@@ -51,6 +54,7 @@ export default function Home({ allPostsData }) {
           height={400}
           quality={10}
           alt="image"
+          loader={loaderProp}
         />
       </section>
 
