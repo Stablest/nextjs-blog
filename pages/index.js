@@ -43,7 +43,7 @@ export default function Home({ allPostsData }) {
         </p>
         <Image
           src={
-            "https://drive.google.com/uc?export=view&id=1AxLkZFi7NXGq882qQHnNsEh8ggU-W_wh"
+            "https://drive.google.com/uc?export=view&id=10FXhW-HjQk41c5mYIfHdFZ_RnkAHXw1G"
           }
           width={600}
           height={400}
